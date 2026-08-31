@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Description>A thread-safe singleton HttpClient for OpenSubtitles's OpenAPI integration.</Description>
+        <Description>Provides a cached HttpClient configured for the OpenSubtitles REST API.</Description>
         <Version Condition="'$(BUILD_VERSION)' == ''">4.0.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.OpenSubtitles.HttpClients</AssemblyName>
