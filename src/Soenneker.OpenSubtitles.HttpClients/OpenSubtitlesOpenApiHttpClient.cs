@@ -11,6 +11,7 @@ using Soenneker.Utils.HttpClientCache.Abstract;
 
 namespace Soenneker.OpenSubtitles.HttpClients;
 
+/// <inheritdoc cref="IOpenSubtitlesOpenApiHttpClient" />
 public sealed class OpenSubtitlesOpenApiHttpClient : IOpenSubtitlesOpenApiHttpClient
 {
     private readonly IHttpClientCache _httpClientCache;
