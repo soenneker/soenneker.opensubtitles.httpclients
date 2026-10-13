@@ -30,7 +30,7 @@ public sealed class OpenSubtitlesOpenApiHttpClient : IOpenSubtitlesOpenApiHttpCl
     {
         return _httpClientCache.Get(_clientId, (config: _config, baseUrl: _config["OpenSubtitles:ClientBaseUrl"] ?? _prodBaseUrl), static state =>
         {
-            var apiKey = state.config.GetValueStrict<string>("OpenSubtitles:ApiKey");
+            var apiKey = state.config.GetStringStrict("OpenSubtitles:ApiKey");
             string apiKeyHeaderName = state.config["OpenSubtitles:ApiKeyHeaderName"] ?? "Api-Key";
             string? token = state.config["OpenSubtitles:Token"];
             string authHeaderName = state.config["OpenSubtitles:AuthHeaderName"] ?? "Authorization";
